@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/receitas-que-nao-vao-fogo', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public','receitas_bolo_01','src', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public','receitas_bolo_01', 'index.html'));
 });
 
 app.get('/curso-simplesmente-amigurumis-4-0', (req, res) => {
