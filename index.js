@@ -13,10 +13,13 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public','receitas_bolo_01', 'index.html'));
 });
 
+app.get('/receitas-que-nao-vao-fogo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public','receitas_bolo_01','src', 'index.html'));
+});
 
 app.get('/curso-simplesmente-amigurumis-4-0', (req, res) => {
     res.sendFile(path.join(__dirname, 'public','receita_teste_1','src', 'index.html'));
-  });
+});
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
