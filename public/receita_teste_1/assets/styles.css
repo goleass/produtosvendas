@@ -64,7 +64,7 @@
     padding: 4px;
     width: 60px;
     height: 60px;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
     background-color: #25D366;
     color: #FFF;
@@ -171,6 +171,12 @@
       line-height: 1.4rem;
     }
   }
+
+  /* @media (max-width: 991.98px) {
+    body .whatsapp-float {
+      bottom: 70px;
+    }
+  } */
   
   body section:nth-of-type(1) {
     position: relative;
