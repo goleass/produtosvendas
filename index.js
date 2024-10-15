@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public','receitas_bolo_01', 'index.html'));
 });
 
+app.get('/receitas-para-bebes/pagamento', (req, res) => {
+  res.redirect('https://go.hotmart.com/S96032525D?ap=a166');
+});
+
 app.get('/receitas-para-bebes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public','receitas_para_bebes', 'index.html'));
 });
