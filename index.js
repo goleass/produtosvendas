@@ -14,7 +14,7 @@ app.get('/receitas-para-bebes/pagamento', (req, res) => {
 });
 
 app.get('/receitas-para-bebes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public','receitas_para_bebes', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public','receitas_para_bebes', 'src', 'index.html'));
 });
 
 app.get('/receitas-que-nao-vao-fogo', (req, res) => {
