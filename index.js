@@ -7,6 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use('/receita_teste_1/assets', express.static(path.join(__dirname, 'public/receita_teste_1/assets')));
+app.use('/simplesmente_amigurumi_40_37/assets', express.static(path.join(__dirname, 'public/simplesmente_amigurumi_40_37/assets')));
 app.use('/receitas_recheios_sem_fogo/assets', express.static(path.join(__dirname, 'public/receitas_recheios_sem_fogo/assets')));
 
 app.get('/receitas-para-bebes/pagamento', (req, res) => {
@@ -23,6 +24,10 @@ app.get('/receitas-que-nao-vao-fogo', (req, res) => {
 
 app.get('/curso-simplesmente-amigurumis-4-0', (req, res) => {
     res.sendFile(path.join(__dirname, 'public','receita_teste_1','src', 'index.html'));
+});
+
+app.get('/curso-simplesmente-amigurumis-4-0-37', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','simplesmente_amigurumi_40_37','src', 'index.html'));
 });
 
 app.listen(port, () => {
