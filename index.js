@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 app.use('/receita_teste_1/assets', express.static(path.join(__dirname, 'public/receita_teste_1/assets')));
 app.use('/simplesmente_amigurumi_40_37/assets', express.static(path.join(__dirname, 'public/simplesmente_amigurumi_40_37/assets')));
 app.use('/receitas_recheios_sem_fogo/assets', express.static(path.join(__dirname, 'public/receitas_recheios_sem_fogo/assets')));
+app.use('/720_receitas_zero/assets', express.static(path.join(__dirname, 'public/720_receitas_zero/assets')));
 
 app.get('/receitas-para-bebes/pagamento', (req, res) => {
   res.redirect('https://go.hotmart.com/S96032525D?ap=a166');
