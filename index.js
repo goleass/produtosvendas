@@ -30,6 +30,14 @@ app.get('/curso-simplesmente-amigurumis-4-0-37', (req, res) => {
   res.sendFile(path.join(__dirname, 'public','simplesmente_amigurumi_40_37','src', 'index.html'));
 });
 
+// app.get('/100-receitas-funcionais', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public','100_receitas_funcionais','src', 'index.html'));
+// });
+
+app.get('/720-receitas-zero', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','720_receitas_zero','src', 'index.html'));
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
