@@ -19,6 +19,15 @@ app.get('/receitas-para-bebes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public','receitas_para_bebes', 'src', 'index.html'));
 });
 
+app.use('/teste/assets', express.static(path.join(__dirname, 'public/teste/assets')));
+app.get('/teste', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','teste', 'index.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','testee', 'index.html'));
+});
+
 app.get('/receitas-que-nao-vao-fogo', (req, res) => {
     res.sendFile(path.join(__dirname, 'public','receitas_recheios_sem_fogo', 'src', 'index.html'));
 });
